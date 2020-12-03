@@ -8,6 +8,8 @@ body {
 	overflow-y: visible;*/
 	max-width: 100%;
 	height: 100%;
+
+
 }
 
 body {
@@ -16,7 +18,7 @@ body {
 	margin: 0;
 	color: #323340;
 	background: #f5f6fb;
-	font-family: $mainFont;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
 }
 
@@ -206,6 +208,13 @@ body {
 		margin: 22px auto 0;
 
 		background: #ED721D;
+
+		transition-duration: .2s;
+		cursor: pointer;
+
+		&:hover {
+			opacity: .7;
+		}
 
 		&:hover {}
 
@@ -448,7 +457,9 @@ body {
 
 
 
-.order-robot-section {}
+.order-robot-section {
+	padding-bottom: 97px;
+}
 
 .roapp-h2 {}
 
@@ -506,6 +517,7 @@ body {
 .order-robot-li {
 	margin-left: 39px;
 	position: relative;
+
 	&::before {
 		content: '';
 		display: block;
@@ -516,6 +528,7 @@ body {
 		top: 8px;
 		background: #ED721D;
 	}
+
 	&+.order-robot-li {
 		margin-top: 54px;
 	}
@@ -540,4 +553,174 @@ body {
 		margin-top: 9px;
 		color: #8E959E;
 	}
+}
+
+
+
+
+.orrob-form-section {}
+
+.orrob-form {
+	width: 783px;
+	position: relative;
+	background: #FFFFFF;
+	box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.15);
+	padding: 21px 36px 44px;
+
+	&::before {
+		content: '';
+		display: block;
+		height: 36px;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		top: -36px;
+		background: #FFFFFF;
+	}
+
+	&::after {
+		content: '';
+		display: block;
+		height: 36px;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		bottom: -36px;
+		background: #FFFFFF;
+	}
+
+
+	&__title {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 40px;
+		line-height: 135.9%;
+		/* or 54px */
+
+		text-transform: uppercase;
+
+		color: #1E2024;
+		padding-top: 21px;
+	}
+
+	&__text1 {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 17px;
+		color: #8E959E;
+		margin-top: 12px;
+	}
+
+	&__form-wrap {
+		margin-top: 60px;
+	}
+
+	&__text-2 {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 17px;
+		color: #8E959E;
+		margin-top: 60px;
+	}
+
+}
+
+.orrob-form-picture {
+	position: absolute;
+	left: calc(100% - 92px);
+	bottom: 0;
+	width: 535px;
+	height: auto;
+}
+
+.orrob-form__form-flex {
+	display: flex;
+	margin: 0 -20px 0;
+
+
+}
+
+
+.orrob-form__form-flex-item {
+	width: calc(33.33% - 20px);
+	margin: 0 10px;
+	display: flex;
+	flex-direction: column;
+
+}
+
+
+.orrob-form__form-submit {
+	display: block;
+	box-sizing: border-box;
+	border: 2px solid #C7CACF;
+	box-sizing: border-box;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 175%;
+	/* identical to box height, or 28px */
+
+	letter-spacing: 0.02em;
+}
+
+.orrob-form__form-inp {
+	padding: 10px 15px;
+	display: block;
+	width: 100%;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 175%;
+	/* identical to box height, or 28px */
+
+	letter-spacing: 0.02em;
+
+	color: #1E2024;
+	box-sizing: border-box;
+
+	&::placeholder {
+		color: #1E2024;
+	}
+
+
+}
+
+.orrob-form__form-inp.js-inp-phone-mask {}
+
+.orrob-form__form-submit {
+	min-height: 52px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	-webkit-appearance: none;
+	appearance: none;
+	background: #FFB536;
+	border: none;
+	box-sizing: border-box;
+
+	font-style: normal;
+	font-weight: 600;
+	font-size: 17px;
+	line-height: 21px;
+	/* identical to box height */
+
+	text-align: center;
+	text-transform: uppercase;
+
+	color: #FFFFFF;
+	transition-duration: .2s;
+	cursor: pointer;
+
+	&:hover {
+		opacity: .7;
+	}
+
+	&:active {}
+
+	&:focus {}
 }

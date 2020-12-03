@@ -454,8 +454,11 @@ block main
 				.orrob-form__form-wrap
 					form
 						.orrob-form__form-flex
-						input.orrob-form__form-inp(type="text" placeholder="Ваше имя")
-						input.orrob-form__form-inp.js-inp-phone-mask(type="text")
-						button.orrob-form__form-submit(type="submit") Отправить заявку
+							.orrob-form__form-flex-item
+								input.orrob-form__form-inp(type="text" placeholder="Ваше имя")
+							.orrob-form__form-flex-item
+								input.orrob-form__form-inp.js-inp-phone-mask(type="text" placeholder="+7 (___)-___-__-__")
+							.orrob-form__form-flex-item
+								button.orrob-form__form-submit(type="submit") Отправить заявку
 				.orrob-form__text-2 Нажимая кнопку, я даю согласие на обработку персональных данных.
 				img.orrob-form-picture(src="images/form-pic-2.png")
